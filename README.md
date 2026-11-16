@@ -33,6 +33,7 @@ Every topic folder follows the same path:
 | Topic | Post | Interview questions | Code |
 | --- | --- | --- | --- |
 | Null safety | [How does null safety work in Kotlin?](https://imayankkumar.com/blog/kotlin-null-safety/) | [Questions](https://imayankkumar.com/interview/kotlin-null-safety/) | [topics/null-safety](topics/null-safety) |
+| Any, Unit and Nothing | [What do Any, Unit and Nothing mean in Kotlin?](https://imayankkumar.com/blog/kotlin-any-unit-nothing/) | [Questions](https://imayankkumar.com/interview/kotlin-any-unit-nothing/) | [topics/any-unit-nothing](topics/any-unit-nothing) |
 
 More topics are added as their posts go live.
 
@@ -53,7 +54,7 @@ Want to try something of your own? Use the [`playground`](playground) module. It
 
 ## How it's built
 
-- Kotlin 2.4.21 on the JVM, JDK 21, Gradle with a version catalog.
+- Kotlin 2.4.21 on the JVM, built with JDK 21. The bytecode targets Java 17, like most Android apps, so the decompiled Java matches what an app ships.
 - One Gradle module per topic. The folder name is the topic id used on the site.
 - Decompiled Java comes from [Vineflower](https://github.com/Vineflower/vineflower), an open-source fork of the decompiler inside Android Studio, so it can run from Gradle and CI. Kotlin's metadata annotations are removed so the code is easier to read.
 - CI builds every topic, runs every test, and fails if `decompiled/` doesn't match the current Kotlin version. When Kotlin changes what it generates, the diff shows exactly what changed.

@@ -1,0 +1,13 @@
+// Does not compile. Paste into topics/any-unit-nothing/src/main/kotlin to see the error.
+// Without `out`, OrderState<Nothing> is not an OrderState<Order>.
+//
+// Expected error:
+// Initializer type mismatch: expected 'PlainOrderState<Order>', actual 'PlainOrderState.Loading'.
+
+package com.imayankkumar.roadmap.anyunitnothing
+
+sealed interface PlainOrderState<T> {
+    data object Loading : PlainOrderState<Nothing>
+}
+
+val plainScreen: PlainOrderState<Order> = PlainOrderState.Loading

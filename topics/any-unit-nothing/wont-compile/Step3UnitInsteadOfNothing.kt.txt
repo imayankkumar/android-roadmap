@@ -1,0 +1,17 @@
+// Does not compile. Paste into topics/any-unit-nothing/src/main/kotlin to see the error.
+// stopOrder returns Unit here, so the compiler thinks the code after it can still run with a null order.
+//
+// Expected error:
+// Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Order?'.
+
+package com.imayankkumar.roadmap.anyunitnothing
+
+fun stopOrderUnit(reason: String) {
+    throw IllegalStateException(reason)
+}
+
+fun orderTotalAlmostRight(orderId: String): Int {
+    val order = findOrder(orderId)
+    if (order == null) stopOrderUnit("Order $orderId not found")
+    return order.total
+}

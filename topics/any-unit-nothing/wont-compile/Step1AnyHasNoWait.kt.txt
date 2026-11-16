@@ -1,0 +1,10 @@
+// Does not compile. Paste into the playground to see the error.
+// Java's Object has wait() and notify(). Kotlin's Any only has equals(), hashCode() and toString().
+//
+// Expected error:
+// Unresolved reference 'wait' on receiver of type 'Any'.
+
+fun main() {
+    val lock: Any = Any()
+    lock.wait()
+}

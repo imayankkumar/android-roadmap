@@ -14,6 +14,16 @@ fun lib(alias: String) = libs.findLibrary(alias).get()
 
 kotlin {
     jvmToolchain(21)
+    compilerOptions {
+        // Most Android apps target Java 17 bytecode. Using the same target here means the
+        // decompiled Java looks like what your app ships (for example, `when` with `is`
+        // checks becomes a chain of instanceof checks, not a Java 21 type switch).
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.release = 17
 }
 
 dependencies {
