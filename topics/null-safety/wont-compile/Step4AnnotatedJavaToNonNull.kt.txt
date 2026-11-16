@@ -1,0 +1,12 @@
+// Does not compile once the Java side has nullability annotations.
+// Paste into topics/null-safety/src/main/kotlin to see the error.
+//
+// Expected error:
+// Initializer type mismatch: expected 'String', actual 'String?'.
+
+package com.imayankkumar.roadmap.nullsafety
+
+fun couponForgetsNull(orderId: String): String {
+    val code: String = AnnotatedCouponService().getCouponCode(orderId)
+    return code
+}

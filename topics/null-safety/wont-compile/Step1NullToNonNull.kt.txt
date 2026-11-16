@@ -1,0 +1,8 @@
+// Does not compile. Paste into the playground to see the error.
+//
+// Expected error:
+// Null cannot be a value of a non-null type 'String'.
+
+fun main() {
+    var restaurant: String = null
+}
