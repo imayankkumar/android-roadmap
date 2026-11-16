@@ -1,6 +1,7 @@
 package com.imayankkumar.roadmap.nullsafety
 
 // Post section: "How does Kotlin stop null crashes?"
+// https://imayankkumar.com/blog/kotlin-null-safety/#how-does-kotlin-stop-null-crashes
 //
 // String can never hold null. String? can. The compiler checks this at build time,
 // so the crash you'd get in Java becomes a build error in Kotlin.

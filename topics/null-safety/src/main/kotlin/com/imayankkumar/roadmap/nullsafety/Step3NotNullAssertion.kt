@@ -1,6 +1,7 @@
 package com.imayankkumar.roadmap.nullsafety
 
 // Post section: "Why is !! risky?"
+// https://imayankkumar.com/blog/kotlin-null-safety/#why-is--risky
 //
 // !! tells the compiler "trust me". If you're wrong, the crash moves from build time to runtime.
 

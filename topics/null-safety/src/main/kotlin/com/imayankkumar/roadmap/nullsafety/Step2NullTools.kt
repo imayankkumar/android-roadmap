@@ -1,6 +1,7 @@
 package com.imayankkumar.roadmap.nullsafety
 
 // Post section: "How do you use a value that might be null?"
+// https://imayankkumar.com/blog/kotlin-null-safety/#how-do-you-use-a-value-that-might-be-null
 // The four everyday tools, one function each.
 
 /** Smart cast: after the check, order is Order, not Order?. */

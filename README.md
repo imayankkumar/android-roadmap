@@ -14,6 +14,18 @@ Each post on [imayankkumar.com](https://imayankkumar.com/blog/) explains one que
 | `wont-compile/` | Snippets from the post that must fail to build, with the exact error |
 | `README.md` | The short answer, links, and what each file shows |
 
+## How to read a topic
+
+Every topic folder follows the same path:
+
+1. **Open the topic's README.** It starts with the short answer, then walks through each step with the key Kotlin lines next to the Java the compiler makes.
+2. **Run `Main.kt`** to see what every step prints.
+3. **Open a step file** (`Step1...kt`) when you want the full code. Its first lines link to the matching section of the post.
+4. **Check the test** for that step. Each claim in the post is one test you can run.
+5. **Open `decompiled/`** for the full Java of any file.
+6. **Try `wont-compile/`.** Paste a snippet into the [playground](playground) and read the compiler error.
+7. **Do the "Try this" tasks** at the end of the README. Change something, run `decompile` again, and compare.
+
 ## Topics
 
 ### Stage 1: Kotlin and DSA basics
@@ -43,7 +55,7 @@ Want to try something of your own? Use the [`playground`](playground) module. It
 
 - Kotlin 2.4.21 on the JVM, JDK 21, Gradle with a version catalog.
 - One Gradle module per topic. The folder name is the topic id used on the site.
-- Decompiled Java comes from [Vineflower](https://github.com/Vineflower/vineflower). Kotlin's metadata annotations are removed so the code is easier to read.
+- Decompiled Java comes from [Vineflower](https://github.com/Vineflower/vineflower), an open-source fork of the decompiler inside Android Studio, so it can run from Gradle and CI. Kotlin's metadata annotations are removed so the code is easier to read.
 - CI builds every topic, runs every test, and fails if `decompiled/` doesn't match the current Kotlin version. When Kotlin changes what it generates, the diff shows exactly what changed.
 
 ## About

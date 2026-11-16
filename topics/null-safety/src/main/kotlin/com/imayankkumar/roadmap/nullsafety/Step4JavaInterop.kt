@@ -1,6 +1,7 @@
 package com.imayankkumar.roadmap.nullsafety
 
 // Post section: "Where can a NullPointerException still happen in Kotlin?"
+// https://imayankkumar.com/blog/kotlin-null-safety/#where-can-a-nullpointerexception-still-happen-in-kotlin
 //
 // At the boundary with Java. A Java String without annotations is String! in Kotlin,
 // and Kotlin lets you treat it as either String or String?.
