@@ -1,0 +1,9 @@
+// Does not compile. Paste into the playground to see the error.
+//
+// Expected error:
+// Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+
+fun main() {
+    val deliveryNote: String? = null
+    println(deliveryNote.length)
+}
