@@ -51,7 +51,7 @@ class Step2NullToolsTest {
     }
 }
 
-class Step3BangBangTest {
+class Step3NotNullAssertionTest {
 
     @Test
     fun `!! works while the value is there`() {

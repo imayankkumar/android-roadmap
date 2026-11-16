@@ -6,7 +6,7 @@ package com.imayankkumar.roadmap.nullsafety;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 
-public final class Step3BangBangKt {
+public final class Step3NotNullAssertionKt {
     @NotNull
     public static final String orderTitleAlmostRight(@NotNull String orderId) {
         Intrinsics.checkNotNullParameter(orderId, "orderId");
@@ -32,7 +32,7 @@ public final class Step3BangBangKt {
         Intrinsics.checkNotNullParameter(orderId, "orderId");
         Order var10000 = ModelKt.findOrder(orderId);
         if (var10000 == null) {
-            int var1/* $VF was: $i$a$-requireNotNull-Step3BangBangKt$orderForRefund$1 */ = 0;
+            int var1/* $VF was: $i$a$-requireNotNull-Step3NotNullAssertionKt$orderForRefund$1 */ = 0;
             String var2 = "Refund asked for unknown order " + orderId;
             throw new IllegalArgumentException(var2.toString());
         } else {

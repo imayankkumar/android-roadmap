@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | 1 | How does Kotlin stop null crashes? | [Step1NullableTypes.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Step1NullableTypes.kt) | [Step1NullableTypesKt.java](decompiled/com/imayankkumar/roadmap/nullsafety/Step1NullableTypesKt.java) |
 | 2 | How do you use a value that might be null? | [Step2NullTools.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Step2NullTools.kt) | [Step2NullToolsKt.java](decompiled/com/imayankkumar/roadmap/nullsafety/Step2NullToolsKt.java) |
-| 3 | Why is !! risky? | [Step3BangBang.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Step3BangBang.kt) | [Step3BangBangKt.java](decompiled/com/imayankkumar/roadmap/nullsafety/Step3BangBangKt.java) |
+| 3 | Why is !! risky? | [Step3NotNullAssertion.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Step3NotNullAssertion.kt) | [Step3NotNullAssertionKt.java](decompiled/com/imayankkumar/roadmap/nullsafety/Step3NotNullAssertionKt.java) |
 | 4 | Where can a NullPointerException still happen? | [Step4JavaInterop.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Step4JavaInterop.kt), [CouponService.java](src/main/java/com/imayankkumar/roadmap/nullsafety/CouponService.java), [AnnotatedCouponService.java](src/main/java/com/imayankkumar/roadmap/nullsafety/AnnotatedCouponService.java) | [Step4JavaInteropKt.java](decompiled/com/imayankkumar/roadmap/nullsafety/Step4JavaInteropKt.java) |
 
 Run [Main.kt](src/main/kotlin/com/imayankkumar/roadmap/nullsafety/Main.kt) to see every step's output. The tests in [NullSafetyTest.kt](src/test/kotlin/com/imayankkumar/roadmap/nullsafety/NullSafetyTest.kt) prove each claim.

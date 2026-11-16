@@ -27,13 +27,13 @@ public final class MainKt {
         System.out
             .println((Object)("  " + Step2NullToolsKt.riderLabel(ModelKt.findOrder("A1")) + " | " + Step2NullToolsKt.riderLabel(ModelKt.findOrder("B2"))));
         System.out.println((Object)"Step 3: !!");
-        System.out.println((Object)("  right: " + Step3BangBangKt.orderTitleRight("Z9")));
+        System.out.println((Object)("  right: " + Step3NotNullAssertionKt.orderTitleRight("Z9")));
 
         int var0/* $VF was: $i$a$-runCatching-MainKt$main$1 */;
         try {
             var0/* $VF was: $i$a$-runCatching-MainKt$main$1 */ = 0;
             var0/* $VF was: $i$a$-runCatching-MainKt$main$1 */ = (int)Result.constructor_impl/* $VF was: constructor-impl */(
-                Step3BangBangKt.orderTitleAlmostRight("Z9")
+                Step3NotNullAssertionKt.orderTitleAlmostRight("Z9")
             );
         } catch (Throwable var5) {
             var0/* $VF was: $i$a$-runCatching-MainKt$main$1 */ = (int)Result.constructor_impl/* $VF was: constructor-impl */(ResultKt.createFailure(var5));
