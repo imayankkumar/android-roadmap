@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// Every primary constructor parameter must be a val or var.
+//
+// Expected error:
+// Primary constructor of data class must only have property ('val' / 'var') parameters.
+
+data class CartItem(val name: String, price: Int)

@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// A data class needs at least one property in its primary constructor.
+//
+// Expected error:
+// Data class must have at least one primary constructor parameter.
+
+data class EmptyCart()

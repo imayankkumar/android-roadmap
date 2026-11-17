@@ -1,0 +1,9 @@
+// Does not compile. Paste into topics/data-classes/src/main/kotlin to see the error.
+// With @ConsistentCopyVisibility, copy() is private like the constructor.
+//
+// Expected error:
+// Cannot access 'fun copy(percent: Int = ...): SafeCoupon': it is private in 'com.imayankkumar.roadmap.dataclasses.SafeCoupon'.
+
+package com.imayankkumar.roadmap.dataclasses
+
+fun tryBypass(): SafeCoupon = SafeCoupon.of(10).copy(percent = 90)

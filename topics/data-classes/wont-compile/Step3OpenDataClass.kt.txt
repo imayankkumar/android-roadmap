@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// A data class is always final, so it can't be open (or abstract, sealed or inner).
+//
+// Expected error:
+// Modifier 'open' is incompatible with 'data'.
+
+open data class CartItem(val name: String, val price: Int)
