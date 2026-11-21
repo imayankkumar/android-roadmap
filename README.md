@@ -35,6 +35,7 @@ Every topic folder follows the same path:
 | Null safety | [How does null safety work in Kotlin?](https://imayankkumar.com/blog/kotlin-null-safety/) | [Questions](https://imayankkumar.com/interview/kotlin-null-safety/) | [topics/null-safety](topics/null-safety) |
 | Any, Unit and Nothing | [What do Any, Unit and Nothing mean in Kotlin?](https://imayankkumar.com/blog/kotlin-any-unit-nothing/) | [Questions](https://imayankkumar.com/interview/kotlin-any-unit-nothing/) | [topics/any-unit-nothing](topics/any-unit-nothing) |
 | Data classes | [When should a Kotlin class be a data class?](https://imayankkumar.com/blog/kotlin-data-class/) | [Questions](https://imayankkumar.com/interview/kotlin-data-class/) | [topics/data-classes](topics/data-classes) |
+| Sealed classes | [When should you use a sealed class in Kotlin?](https://imayankkumar.com/blog/kotlin-sealed-class/) | [Questions](https://imayankkumar.com/interview/kotlin-sealed-class/) | [topics/sealed-vs-enum](topics/sealed-vs-enum) |
 
 More topics are added as their posts go live.
 

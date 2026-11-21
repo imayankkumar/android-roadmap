@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// A sealed class constructor can only be protected (the default) or private.
+//
+// Expected error:
+// Constructor must be private or protected in sealed class.
+
+sealed class Discount public constructor(val percent: Int)

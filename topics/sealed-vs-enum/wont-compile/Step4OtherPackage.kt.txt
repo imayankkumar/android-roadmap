@@ -1,0 +1,11 @@
+// Does not compile. Paste into topics/sealed-vs-enum/src/main/kotlin to see the error.
+// Same module, but another package.
+//
+// Expected error:
+// A class can only extend a sealed class or interface declared in the same package.
+
+package com.imayankkumar.roadmap.sealedvsenum.payments
+
+import com.imayankkumar.roadmap.sealedvsenum.PaymentResult
+
+class Voided(orderId: String) : PaymentResult(orderId)

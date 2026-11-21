@@ -1,0 +1,13 @@
+// Does not compile. Paste into topics/sealed-vs-enum/src/main/kotlin to see the error.
+// TrackedOrderState has a Cancelled state, and this when doesn't handle it.
+//
+// Expected error:
+// 'when' expression must be exhaustive. Add the 'is Cancelled' branch or an 'else' branch.
+
+package com.imayankkumar.roadmap.sealedvsenum
+
+fun titleMissingCancelled(state: TrackedOrderState): String = when (state) {
+    TrackedOrderState.Loading -> "Loading"
+    is TrackedOrderState.Ready -> "Your order"
+    is TrackedOrderState.Failed -> "Something went wrong"
+}

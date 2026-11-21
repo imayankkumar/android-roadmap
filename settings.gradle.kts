@@ -30,4 +30,13 @@ file("topics").listFiles()
     ?.forEach { dir ->
         include(":${dir.name}")
         project(":${dir.name}").projectDir = dir
+        // A topic can have extra modules inside it, for rules that only show up across
+        // modules (for example, topics/sealed-vs-enum/other-module).
+        dir.listFiles()
+            ?.filter { it.resolve("build.gradle.kts").exists() }
+            ?.sortedBy { it.name }
+            ?.forEach { child ->
+                include(":${dir.name}:${child.name}")
+                project(":${dir.name}:${child.name}").projectDir = child
+            }
     }
