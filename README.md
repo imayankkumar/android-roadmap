@@ -36,6 +36,7 @@ Every topic folder follows the same path:
 | Any, Unit and Nothing | [What do Any, Unit and Nothing mean in Kotlin?](https://imayankkumar.com/blog/kotlin-any-unit-nothing/) | [Questions](https://imayankkumar.com/interview/kotlin-any-unit-nothing/) | [topics/any-unit-nothing](topics/any-unit-nothing) |
 | Data classes | [When should a Kotlin class be a data class?](https://imayankkumar.com/blog/kotlin-data-class/) | [Questions](https://imayankkumar.com/interview/kotlin-data-class/) | [topics/data-classes](topics/data-classes) |
 | Sealed classes | [When should you use a sealed class in Kotlin?](https://imayankkumar.com/blog/kotlin-sealed-class/) | [Questions](https://imayankkumar.com/interview/kotlin-sealed-class/) | [topics/sealed-vs-enum](topics/sealed-vs-enum) |
+| Inner vs nested classes | [Inner vs nested class in Kotlin: what is the difference?](https://imayankkumar.com/blog/kotlin-inner-vs-nested-class/) | [Questions](https://imayankkumar.com/interview/kotlin-inner-vs-nested-class/) | [topics/inner-vs-nested-classes](topics/inner-vs-nested-classes) |
 
 More topics are added as their posts go live.
 

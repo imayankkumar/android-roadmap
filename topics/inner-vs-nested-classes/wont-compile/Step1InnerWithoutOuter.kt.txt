@@ -1,0 +1,9 @@
+// Does not compile. Paste into topics/inner-vs-nested-classes/src/main/kotlin to see the error.
+// An inner class needs an OrderTracker to be created from.
+//
+// Expected error:
+// Constructor of the inner class 'inner class StatusLabel : Any' can only be called with a receiver of the containing class.
+
+package com.imayankkumar.roadmap.innervsnestedclasses
+
+fun labelWithoutTracker() = OrderTracker.StatusLabel()
