@@ -2,7 +2,7 @@
 
 > A data class compares by value. For every property in its primary constructor, the compiler writes `equals()`, `hashCode()`, `toString()`, `componentN()` and `copy()`. A regular class compares by identity: two objects are equal only if they are the same object. `copy()` is shallow, so a mutable list inside a data class is shared between the old and new copy.
 
-**Read:** [Kotlin data class vs regular class](https://imayankkumar.com/blog/kotlin-data-class/) · **Practice:** [Interview questions](https://imayankkumar.com/interview/kotlin-data-class/)
+**Read:** [When should a Kotlin class be a data class?](https://imayankkumar.com/blog/kotlin-data-class/) · **Practice:** [Interview questions](https://imayankkumar.com/interview/kotlin-data-class/)
 
 Run [Main.kt](src/main/kotlin/com/imayankkumar/roadmap/dataclasses/Main.kt) to see what every step prints. Each step below shows the key Kotlin lines next to the Java the compiler makes from them. The tests in [DataClassTest.kt](src/test/kotlin/com/imayankkumar/roadmap/dataclasses/DataClassTest.kt) prove each claim.
 

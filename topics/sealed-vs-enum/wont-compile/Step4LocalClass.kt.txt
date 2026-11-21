@@ -1,0 +1,14 @@
+// Does not compile. Paste into the playground to see the errors.
+// Subtypes of a sealed type need a proper name: no local classes, no anonymous objects.
+//
+// Expected errors:
+// Local class cannot extend a sealed interface.
+// Anonymous object cannot extend a sealed interface.
+
+sealed interface CartEvent
+
+fun events(): List<CartEvent> {
+    class Cleared : CartEvent
+    val opened = object : CartEvent {}
+    return listOf(Cleared(), opened)
+}
