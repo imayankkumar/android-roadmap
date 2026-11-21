@@ -1,0 +1,11 @@
+// Does not compile. Paste into the playground to see the error.
+// A nested class has no outer object, so it can't read orderId.
+//
+// Expected error:
+// Outer class 'class OrderTracker : Any' of non-inner class cannot be used as receiver.
+
+class OrderTracker(val orderId: String) {
+    class DeliveryStop(val name: String) {
+        fun label() = "$name for order $orderId"
+    }
+}
