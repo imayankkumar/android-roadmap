@@ -1,0 +1,14 @@
+// Does not compile. Paste into the playground to see the error.
+// CANCELLED was added to the enum, and this when doesn't handle it.
+//
+// Expected error:
+// 'when' expression must be exhaustive. Add the 'CANCELLED' branch or an 'else' branch.
+
+enum class OrderStatus { PLACED, PREPARING, OUT_FOR_DELIVERY, DELIVERED, CANCELLED }
+
+fun label(status: OrderStatus): String = when (status) {
+    OrderStatus.PLACED -> "Order placed"
+    OrderStatus.PREPARING -> "Being prepared"
+    OrderStatus.OUT_FOR_DELIVERY -> "On the way"
+    OrderStatus.DELIVERED -> "Delivered"
+}
