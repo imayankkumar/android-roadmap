@@ -1,0 +1,9 @@
+// Does not compile. Paste into the playground to see the error.
+// Every enum already extends Enum, so it can't extend another class. Interfaces are fine.
+//
+// Expected error:
+// Enum classes cannot extend classes.
+
+open class Tracked
+
+enum class OrderStatus : Tracked() { PLACED, DELIVERED }
