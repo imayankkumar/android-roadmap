@@ -38,6 +38,7 @@ Every topic folder follows the same path:
 | Sealed classes | [When should you use a sealed class in Kotlin?](https://imayankkumar.com/blog/kotlin-sealed-class/) | [Questions](https://imayankkumar.com/interview/kotlin-sealed-class/) | [topics/sealed-vs-enum](topics/sealed-vs-enum) |
 | Inner vs nested classes | [Inner vs nested class in Kotlin: what is the difference?](https://imayankkumar.com/blog/kotlin-inner-vs-nested-class/) | [Questions](https://imayankkumar.com/interview/kotlin-inner-vs-nested-class/) | [topics/inner-vs-nested-classes](topics/inner-vs-nested-classes) |
 | Enum classes | [When should you use an enum class in Kotlin?](https://imayankkumar.com/blog/kotlin-enum-class/) | [Questions](https://imayankkumar.com/interview/kotlin-enum-class/) | [topics/enum-classes](topics/enum-classes) |
+| Value classes | [What is a value class in Kotlin, and when does it create an object?](https://imayankkumar.com/blog/kotlin-value-class/) | [Questions](https://imayankkumar.com/interview/kotlin-value-class/) | [topics/value-classes](topics/value-classes) |
 
 More topics are added as their posts go live.
 
