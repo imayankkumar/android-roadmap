@@ -1,0 +1,12 @@
+// Does not compile. Paste into the playground to see the error.
+// A public function that returns an object expression has the type Any,
+// so the caller can't see the object's members.
+//
+// Expected error:
+// Unresolved reference 'x' on receiver of type 'Any'.
+
+fun point() = object {
+    val x = 1
+}
+
+fun readX() = point().x

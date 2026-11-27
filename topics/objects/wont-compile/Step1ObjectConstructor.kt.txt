@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// An object has no constructor, so it can't take parameters.
+//
+// Expected error:
+// Objects cannot have constructors.
+
+object Session(val email: String)

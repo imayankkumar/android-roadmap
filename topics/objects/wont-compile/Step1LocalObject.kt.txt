@@ -1,0 +1,11 @@
+// Does not compile. Paste into the playground to see the error.
+// An object declaration can't live inside a function. Use an object expression there.
+//
+// Expected error:
+// Named object 'Inside' cannot be local. Try to use an anonymous object instead.
+
+fun login() {
+    object Inside {
+        val email = "hello@imayankkumar.com"
+    }
+}
