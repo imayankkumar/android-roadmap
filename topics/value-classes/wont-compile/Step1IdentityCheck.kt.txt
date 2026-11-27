@@ -1,0 +1,10 @@
+// Does not compile. Paste into the playground to see the error.
+// A value class has no identity, so === isn't allowed. Use == instead.
+//
+// Expected error:
+// Identity equality for arguments of types 'Email' and 'Email' is prohibited.
+
+@JvmInline
+value class Email(val value: String)
+
+fun sameObject(a: Email, b: Email): Boolean = a === b

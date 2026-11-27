@@ -1,0 +1,19 @@
+// Does not compile. Paste into the playground to see the error.
+// The phone number and the email are passed in the wrong order.
+//
+// Expected error:
+// Argument type mismatch: actual type is 'PhoneNumber', but 'Email' was expected.
+
+@JvmInline
+value class Email(val value: String)
+
+@JvmInline
+value class PhoneNumber(val value: String)
+
+fun sendOtp(email: Email, phone: PhoneNumber) {}
+
+fun main() {
+    val email = Email("asha@example.com")
+    val phone = PhoneNumber("+91 98765 43210")
+    sendOtp(phone, email)
+}

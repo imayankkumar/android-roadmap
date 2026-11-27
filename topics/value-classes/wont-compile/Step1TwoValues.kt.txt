@@ -1,0 +1,8 @@
+// Does not compile. Paste into the playground to see the error.
+// A value class holds exactly one value.
+//
+// Expected error:
+// Value class must have exactly one primary constructor parameter.
+
+@JvmInline
+value class Contact(val email: String, val phone: String)

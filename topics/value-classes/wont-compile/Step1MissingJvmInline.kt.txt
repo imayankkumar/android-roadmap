@@ -1,0 +1,7 @@
+// Does not compile. Paste into the playground to see the error.
+// On the JVM, a value class needs @JvmInline.
+//
+// Expected error:
+// Value classes without '@JvmInline' annotation are not yet supported.
+
+value class Email(val value: String)
