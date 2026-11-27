@@ -1,0 +1,9 @@
+// Does not compile. Paste into the playground to see the error.
+// A data object's equals() and hashCode() are fixed by the compiler.
+//
+// Expected error:
+// Data object cannot have a custom implementation of 'equals' or 'hashCode'.
+
+data object LoggedOut {
+    override fun equals(other: Any?): Boolean = true
+}
